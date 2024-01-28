@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Cucumber Parallel Test Suite" verbose="1" parallel="classes" thread-count="1">
+    <test name="Swag Labs UI Automation Tests">
+        <classes>
+            <class name="runner.TestRunner">
+            </class>
+        </classes>
+    </test>
+</suite>
