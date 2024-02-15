@@ -7,28 +7,14 @@ import org.openqa.selenium.WebElement;
 public class ProductListingPage {
 
     WebDriver driver;
-
     private By aadtoCartBtnLoc = By.id("add-to-cart-sauce-labs-backpack");
     private By carticonlocator = By.xpath("//a[@class='shopping_cart_link']");
 
     private By productnamelocator = By.xpath("//*[@id=\"item_4_img_link\"]/img");
-
-
     private By checkoutPageHeadingloc = By.xpath("//span[@class='title']");
-
     private By productdetailspageloc = By.id("add-to-cart-sauce-labs-backpack");
-
     private By prodloconCheckoutpage = By.xpath("//div[text()='Sauce Labs Backpack']");
-
-    //private By cartPageHeadingloc = By.xpath("//span[text()='Your Cart']");
-
     private By checkoutBtnLoc = By.xpath("//button[@class='btn btn_action btn_medium checkout_button ' and @id='checkout']");
-
-    // private  By checkoutBtnLoc = By.xpath("//button[@name='checkout']");
-
-
-    //private  By cartPagedisplayloc = By.xpath("//*[@id=\"header_container\"]/div[1]/div[2]/div");
-
     private By cartPagedisplayloc = By.xpath("//span[@class='title']");
 
     public ProductListingPage(WebDriver driver) {
@@ -65,7 +51,6 @@ public class ProductListingPage {
 
     }
 
-
     public boolean IscheckoutPageheadingDisplayed() {
         return driver.findElement(checkoutPageHeadingloc).isDisplayed();
     }
@@ -82,11 +67,4 @@ public class ProductListingPage {
         WebElement checkoutBtn = driver.findElement(checkoutBtnLoc);
         checkoutBtn.click();
     }
-
-    //public  boolean checkoutPageHeadingIsDisplayed()
-    // {
-    //  return driver.findElement(checkoutPageHeadingloc).isDisplayed();
-    // }
-
-
 }
